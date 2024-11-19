@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "d1397fb3-1af0-4f7d-bad1-e23014595d53",
+		"name": "Prueba-xpertgroup",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7570388"
+	},
+	"item": [
+		{
+			"name": "Obtener lista de gatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cats/breeds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cats",
+						"breeds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener información de un gato especifico.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cats/breeds/abys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cats",
+						"breeds",
+						"abys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hacer la búsqueda de un gato.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cats/breeds/search?q=aege",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cats",
+						"breeds",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "aege"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
